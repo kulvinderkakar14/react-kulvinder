@@ -21,7 +21,6 @@ ReactDOM.render(
       <Route exact path="/">
         <App country={countryObj} />
       </Route>
-      <Route path="/news" />
     </Switch>
   </Router>,
   document.getElementById('root')

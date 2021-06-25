@@ -3,7 +3,7 @@
   position: absolute;
   left: 20%;
   top: 10%;
-  width: 55%;
+  width: 52.5%;
   max-width: 1000px;
   height: auto;
   background-color: white;
@@ -19,6 +19,7 @@
   min-width: 100px;
   border-radius: 0px;
   padding: 16px;
+  margin-left: 20px;
 }
 
 .flex-child:first-child {
@@ -107,6 +108,23 @@
   height: 14px;
   position: relative;
   width: 100%;
+  left: 2px;
+  padding-bottom: 10px;
+  border-radius: nullpx;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.selectYear1 {
+  height: 14px;
+  position: relative;
+  width: 100%;
+  left: -5px;
   padding-bottom: 10px;
   border-radius: nullpx;
   font-family: Lato;
@@ -140,7 +158,6 @@
   height: 40px;
   left: 16px;
   top: 225px;
-  border: 1px solid #a4a4a4;
   box-sizing: border-box;
   border-radius: 5px;
   font-family: Lato;
@@ -159,7 +176,7 @@
   left: 18px;
   top: 300px;
   padding-top: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   border-radius: 2px;
   font-family: Lato;
   font-size: 12px;
@@ -196,7 +213,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 17px;
-  border: 1px solid #a4a4a4;
+  border: 1px solid black;
 }
 
 .myIncome input {
@@ -248,7 +265,7 @@
 }
 .currency-zero1 {
   position: absolute;
-  left: 78%;
+  left: 275px;
   top: 12px;
   color: gray;
 }
@@ -259,7 +276,7 @@
 }
 .currency-zero {
   position: absolute;
-  left: 78%;
+  left: 275px;
   top: 12px;
 }
 
@@ -363,4 +380,61 @@ button {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+}
+
+.myIncome1 {
+  width: 300px;
+  height: 40px;
+  left: 16px;
+  top: 300px;
+  box-sizing: border-box;
+  border-radius: nullpx;
+  padding-left: 15px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 0;
+  font-size: 14px;
+  line-height: 14px;
+  color: #d3d3d396;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.myIncome1 input {
+  padding-left: 18px;
+  top: 30%;
+  color: #d3d3d396;
+}
+.myIncome1:before {
+  position: absolute;
+  width: 50px;
+  height: 35px;
+  left: 49%;
+  top: 72%;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  flex-wrap: wrap;
+  /* identical to box height */
+  color: gray;
+  content: '$';
+}
+
+.myIncome1:after {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  left: 83%;
+  top: 72%;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: gray;
+  content: '.00';
 }

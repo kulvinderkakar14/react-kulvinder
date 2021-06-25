@@ -2,12 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import { useHistory, Route } from 'react-router-dom';
 
-const countryNames = ['Australia', 'India'];
-const countryObj = countryNames.map((country, i) => ({
-  id: i,
-  countryVal: country
-}));
-
 export default function App(props) {
   const [currentView, updateView] = useState({
     view: 'view1',
@@ -38,7 +32,7 @@ export default function App(props) {
 }
 
 function View1(props) {
-  const countryNames = ['Australia', 'India'];
+  const countryNames = ['Australia'];
   const countryObj = countryNames.map((country, i) => ({
     id: i,
     countryVal: country
@@ -178,7 +172,6 @@ function View1(props) {
             </select>
           </div>
           <div className="selectYear">Select your income year *</div>
-          &nbsp;
           <select
             id="incomeYear"
             name="select-Year"
@@ -207,12 +200,12 @@ function View1(props) {
           <div style={{ color: 'red', fontSize: '10px' }}>
             <Error inc={amount} />
           </div>
-          <button style={{ left: '5px' }} id="Calculate">
+          <button style={{ left: '0px' }} id="Calculate">
             Calculate
           </button>
         </form>
       </div>
-    </div>
+    </div> 
   );
 }
 
@@ -221,36 +214,41 @@ function View2(props) {
     <div className="flex-container">
       <div className="flex-child">
         <span className="title-form">&nbsp;Your tax results</span> <br />
-        <img src="css/info-box.svg" />
         <div className="selectCountry">Select your country of residence *</div>
         &nbsp;
         <div id="taxableCountry">
-          <select id="country" disabled={true} name="select-one-country">
+          <select
+            id="country"
+            disabled={true}
+            name="select-one-country"
+            style={{ color: 'gray' }}
+          >
             <option value={props.view.country}>{props.view.country}</option>
           </select>
         </div>
-        <div className="selectYear">Select your income year *</div>
+        <div className="selectYear1">&nbsp;Select your income year *</div>
         &nbsp;
         <select
           id="incomeYear"
           name="select-Year"
-          className="selectYear"
+          className="selectYear1"
           disabled={true}
+          style={{ color: 'gray' }}
         >
           <option value={props.view.year}>{props.view.year}</option>
         </select>
         <div className="taxableincome">
           Enter your total taxable income for the income year *
         </div>
-        &nbsp;
         <div className="currency-wrap">
           <span className="currency-code1">$</span>
           <span className="currency-zero1">.00</span>
           <input
             type="text"
-            className="myIncome"
+            className="myIncome1"
             placeholder={props.view.Income}
             disabled={true}
+            style={{ color: 'gray' }}
             value={props.view.Income}
           />
         </div>
@@ -258,7 +256,7 @@ function View2(props) {
           <a
             style={{
               position: 'relative',
-              top: '50px'
+              top: '20px'
             }}
             href=""
             id="Calculate"

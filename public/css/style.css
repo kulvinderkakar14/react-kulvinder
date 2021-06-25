@@ -1,0 +1,366 @@
+.flex-container {
+  display: flex;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 55%;
+  max-width: 1000px;
+  height: auto;
+  background-color: white;
+  padding: 40px 40px 40px 40px;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+
+.flex-child {
+  flex: 1;
+  height: 418px;
+  width: 100%;
+  min-width: 100px;
+  border-radius: 0px;
+  padding: 16px;
+}
+
+.flex-child:first-child {
+  height: 418px;
+  width: 100%;
+  left: 32px;
+  top: 32px;
+  border-radius: 5px;
+}
+
+.title-form {
+  position: static;
+  width: 100%;
+  height: 38px;
+  left: 16px;
+  top: 16px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+
+  color: #000000;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.mandatory {
+  height: 39px;
+  width: 100%;
+  left: 16px;
+  top: 70px;
+  border-radius: [object Object]px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 16px 0px;
+}
+
+.selectCountry {
+  /* Country Label */
+  width: auto;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 5px;
+  color: #000000;
+}
+
+#taxableCountry select {
+  height: 40px;
+  width: 300px;
+  margin-bottom: 20px;
+  border-radius: [object Object]px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* identical to box height */
+
+  color: #000000;
+  position: relative;
+}
+
+.countryInput::after {
+  position: absolute;
+  width: 12px;
+  height: 8px;
+  left: 302.27px;
+  top: 170px;
+
+  background: #585757;
+  transform: rotate(180deg);
+}
+
+.selectYear {
+  height: 14px;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+  border-radius: nullpx;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#incomeYear {
+  height: 40px;
+  width: 300px;
+  margin-top: 10px;
+  border-radius: [object Object]px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.incomeInput {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  left: 16px;
+  top: 225px;
+  border: 1px solid #a4a4a4;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.taxableincome {
+  margin-top: 10px;
+  height: 14px;
+  left: 18px;
+  top: 300px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 2px;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.myButton {
+  width: 300px;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  border: 1px solid #a4a4a4;
+}
+
+.myIncome {
+  width: 300px;
+  height: 40px;
+  left: 16px;
+  top: 300px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 15px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17px;
+  border: 1px solid #a4a4a4;
+}
+
+.myIncome input {
+  padding-left: 18px;
+}
+.myIncome:before {
+  position: absolute;
+  width: 50px;
+  height: 35px;
+  left: 49%;
+  top: 72%;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  flex-wrap: wrap;
+  /* identical to box height */
+  color: black;
+  content: '$';
+}
+
+.myIncome:after {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  left: 83%;
+  top: 72%;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: black;
+  content: '.00';
+}
+
+.currency-wrap {
+  position: relative;
+}
+
+.currency-code1 {
+  position: absolute;
+  left: 4px;
+  top: 12px;
+  color: gray;
+}
+.currency-zero1 {
+  position: absolute;
+  left: 78%;
+  top: 12px;
+  color: gray;
+}
+.currency-code {
+  position: absolute;
+  left: 4px;
+  top: 12px;
+}
+.currency-zero {
+  position: absolute;
+  left: 78%;
+  top: 12px;
+}
+
+button {
+  position: relative;
+  width: 300px;
+  height: 43px;
+  left: 5%;
+  top: 5%;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+  margin: 16px 0px;
+  background: #8477c9;
+  box-shadow: 0px 4px 8px #e7e7ff;
+  border-radius: 5px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.heading {
+  position: absolute;
+  width: 226px;
+  height: 58px;
+  left: 78px;
+  top: 160px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 58px;
+  color: #ffffff;
+}
+
+.sub-heading {
+  position: absolute;
+  width: 264px;
+  height: 38px;
+  left: 78px;
+  top: 220px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.error {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8px;
+  line-height: 19px;
+  color: red;
+}
+
+.white-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  z-index: -1;
+}
+
+.heading-right {
+  /* Taxable income header */
+
+  position: absolute;
+  width: 209px;
+  height: 17px;
+  left: 432px;
+  top: 52px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+.sub-heading-right {
+  position: absolute;
+  width: 264px;
+  height: 38px;
+  left: 78px;
+  top: 220px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
